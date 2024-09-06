@@ -6,10 +6,8 @@ ini_set('error_log', __DIR__ . '/php_error.log');
 
 // Set headers to allow cross-origin requests
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-header("Access-Control-Allow-Credentials: true"); // if you are using credentials
-
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 
 include "DbConnect.php";
 include "Items.php";
@@ -72,3 +70,9 @@ switch ($method) {
         break;
 }
 
+?>
+<html>
+
+<body><p>PP</p></body>
+
+</html>
