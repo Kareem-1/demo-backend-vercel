@@ -69,10 +69,3 @@ switch ($method) {
         echo json_encode(['status' => 'error', 'message' => 'Method not allowed']);
         break;
 }
-
-?>
-<html>
-
-<body><p>PP</p></body>
-
-</html>
