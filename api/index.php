@@ -70,9 +70,3 @@ switch ($method) {
         break;
 }
 
-?>
-<html>
-
-<body><p>PP</p></body>
-
-</html>
