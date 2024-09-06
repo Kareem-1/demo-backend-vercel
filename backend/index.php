@@ -53,14 +53,14 @@ switch ($method) {
         break;
 
     case "GET":
-        $items_class = new Furniture(null,null,null,null);
+        $items_class = new Furniture(null, null, null, null);
         $items_class->getItems($conn);
         exit();
 
     case "DELETE":
         $inputs = json_decode(file_get_contents('php://input'), true);
         $seperated = implode(', ', $inputs);
-        $items_class = new Furniture(null,null,null,null);
+        $items_class = new Furniture(null, null, null, null);
         $items_class->deleteItems($conn, $seperated);
         break;
 
@@ -70,3 +70,9 @@ switch ($method) {
         break;
 }
 
+?>
+<html>
+
+<body><p>PP</p></body>
+
+</html>
